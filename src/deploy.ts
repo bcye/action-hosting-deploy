@@ -76,7 +76,7 @@ async function execWithCredentials(
 
   try {
     await exec(
-      "npx firebase-tools",
+      "npx firebase-tools@11.13.0",
       [
         ...args,
         ...(projectId ? ["--project", projectId] : []),
